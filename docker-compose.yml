@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  monitorix-backend:
+    image: programmer175/monitorix:main
+    container_name: monitorix-backend
+    ports:
+      - 8000:8000
+
+  monitorix-frontend:
+    image: programmer175/monitorix-frontend:main
+    container_name: monitorix-frontend
+    ports:
+      - 3000:3000
